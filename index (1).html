@@ -1,0 +1,995 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Data Science Engineer Internship Program - The Link AI</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        * {
+            font-family: 'Inter', sans-serif;
+        }
+        .gradient-bg {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        .ai-gradient {
+            background: linear-gradient(45deg, #2563eb, #3b82f6, #60a5fa);
+        }
+        .section-divider {
+            background: linear-gradient(90deg, transparent, #e5e7eb, transparent);
+            height: 1px;
+            margin: 3rem 0;
+        }
+        .video-card:hover {
+            transform: translateY(-4px);
+            transition: all 0.3s ease;
+        }
+        .progress-ring {
+            transform: rotate(-90deg);
+        }
+        .progress-ring-circle {
+            stroke-dasharray: 283;
+            stroke-dashoffset: 283;
+            transition: stroke-dashoffset 0.35s;
+        }
+        .animate-fade-in {
+            animation: fadeIn 0.6s ease-in;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .nav-link {
+            transition: all 0.3s ease;
+        }
+        .nav-link:hover {
+            color: #3b82f6;
+            transform: translateX(5px);
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="fixed top-0 left-0 w-full bg-white shadow-lg z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center">
+                    <i class="fas fa-brain text-2xl text-blue-600 mr-3"></i>
+                    <span class="text-xl font-bold text-gray-900">The Link AI</span>
+                </div>
+                <div class="hidden md:flex space-x-6">
+                    <a href="#overview" class="nav-link text-gray-700 hover:text-blue-600">Overview</a>
+                    <a href="#objectives" class="nav-link text-gray-700 hover:text-blue-600">Objectives</a>
+                    <a href="#curriculum" class="nav-link text-gray-700 hover:text-blue-600">Curriculum</a>
+                    <a href="#evaluation" class="nav-link text-gray-700 hover:text-blue-600">Evaluation</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="overview" class="pt-16 gradient-bg text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+            <div class="text-center animate-fade-in">
+                <i class="fas fa-robot text-6xl mb-6 text-blue-200"></i>
+                <h1 class="text-5xl font-bold mb-6">AI Data Science Engineer</h1>
+                <h2 class="text-3xl font-light mb-8">Internship Program</h2>
+                <div class="bg-white bg-opacity-20 rounded-lg p-8 max-w-4xl mx-auto">
+                    <div class="grid md:grid-cols-3 gap-6 text-center">
+                        <div>
+                            <i class="fas fa-calendar-alt text-3xl mb-3"></i>
+                            <h3 class="text-xl font-semibold">Duration</h3>
+                            <p>3 Months (12 Weeks)</p>
+                        </div>
+                        <div>
+                            <i class="fas fa-user-tie text-3xl mb-3"></i>
+                            <h3 class="text-xl font-semibold">Mentor</h3>
+                            <p>Hardik Bhatt, AI Generalist</p>
+                        </div>
+                        <div>
+                            <i class="fas fa-building text-3xl mb-3"></i>
+                            <h3 class="text-xl font-semibold">Company</h3>
+                            <p>The Link AI</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Program Objectives -->
+    <section id="objectives" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">Program Objectives</h2>
+                <p class="text-xl text-gray-600">Transforming aspiring professionals into AI Data Science Engineers</p>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-gradient-to-br from-blue-50 to-blue-100 p-6 rounded-lg">
+                    <i class="fas fa-book text-3xl text-blue-600 mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-3">Strong Theoretical Foundation</h3>
+                    <p class="text-gray-700">Build comprehensive understanding of data science, machine learning, and AI concepts</p>
+                </div>
+                <div class="bg-gradient-to-br from-green-50 to-green-100 p-6 rounded-lg">
+                    <i class="fas fa-tools text-3xl text-green-600 mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-3">Practical Expertise</h3>
+                    <p class="text-gray-700">Master industry-standard tools and technologies through hands-on experience</p>
+                </div>
+                <div class="bg-gradient-to-br from-purple-50 to-purple-100 p-6 rounded-lg">
+                    <i class="fas fa-project-diagram text-3xl text-purple-600 mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-3">Real-World Projects</h3>
+                    <p class="text-gray-700">Apply skills to actual business problems delivering tangible value</p>
+                </div>
+                <div class="bg-gradient-to-br from-red-50 to-red-100 p-6 rounded-lg">
+                    <i class="fas fa-search text-3xl text-red-600 mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-3">Research Mindset</h3>
+                    <p class="text-gray-700">Develop skills for identifying and evaluating new AI tools and technologies</p>
+                </div>
+                <div class="bg-gradient-to-br from-yellow-50 to-yellow-100 p-6 rounded-lg">
+                    <i class="fas fa-briefcase text-3xl text-yellow-600 mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-3">Career Preparation</h3>
+                    <p class="text-gray-700">Ready for full-time AI Data Science Engineer roles at The Link AI</p>
+                </div>
+                <div class="bg-gradient-to-br from-indigo-50 to-indigo-100 p-6 rounded-lg">
+                    <i class="fas fa-cogs text-3xl text-indigo-600 mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-3">R&D Innovation</h3>
+                    <p class="text-gray-700">Contribute to AI tool evaluation and implementation strategies</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Program Structure Overview -->
+    <section class="py-20 bg-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">Program Structure</h2>
+                <p class="text-xl text-gray-600">Three-phase comprehensive learning journey</p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white rounded-lg shadow-lg p-8 text-center">
+                    <div class="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <span class="text-2xl font-bold text-white">1</span>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4 text-blue-600">Month 1</h3>
+                    <h4 class="text-xl font-semibold mb-4">Theoretical Foundations</h4>
+                    <p class="text-gray-600 mb-6">Build strong understanding of core data science and AI concepts</p>
+                    <div class="text-left">
+                        <div class="flex items-center mb-2">
+                            <i class="fas fa-check-circle text-green-500 mr-2"></i>
+                            <span>Data Science Introduction</span>
+                        </div>
+                        <div class="flex items-center mb-2">
+                            <i class="fas fa-check-circle text-green-500 mr-2"></i>
+                            <span>Python for Data Science</span>
+                        </div>
+                        <div class="flex items-center mb-2">
+                            <i class="fas fa-check-circle text-green-500 mr-2"></i>
+                            <span>Data Engineering & ETL</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-check-circle text-green-500 mr-2"></i>
+                            <span>Machine Learning Basics</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-lg p-8 text-center">
+                    <div class="w-16 h-16 bg-green-600 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <span class="text-2xl font-bold text-white">2</span>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4 text-green-600">Month 2</h3>
+                    <h4 class="text-xl font-semibold mb-4">Tools & Technologies</h4>
+                    <p class="text-gray-600 mb-6">Hands-on experience with essential data science tools</p>
+                    <div class="text-left">
+                        <div class="flex items-center mb-2">
+                            <i class="fas fa-check-circle text-green-500 mr-2"></i>
+                            <span>Advanced Data Analysis</span>
+                        </div>
+                        <div class="flex items-center mb-2">
+                            <i class="fas fa-check-circle text-green-500 mr-2"></i>
+                            <span>SQL & Data Warehousing</span>
+                        </div>
+                        <div class="flex items-center mb-2">
+                            <i class="fas fa-check-circle text-green-500 mr-2"></i>
+                            <span>Deep Learning & AI Tools</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-check-circle text-green-500 mr-2"></i>
+                            <span>MLOps & Deployment</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-lg p-8 text-center">
+                    <div class="w-16 h-16 bg-purple-600 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <span class="text-2xl font-bold text-white">3</span>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4 text-purple-600">Month 3</h3>
+                    <h4 class="text-xl font-semibold mb-4">Capstone Project</h4>
+                    <p class="text-gray-600 mb-6">Apply skills to real-world business problems</p>
+                    <div class="text-left">
+                        <div class="flex items-center mb-2">
+                            <i class="fas fa-check-circle text-green-500 mr-2"></i>
+                            <span>Project Planning</span>
+                        </div>
+                        <div class="flex items-center mb-2">
+                            <i class="fas fa-check-circle text-green-500 mr-2"></i>
+                            <span>Model Development</span>
+                        </div>
+                        <div class="flex items-center mb-2">
+                            <i class="fas fa-check-circle text-green-500 mr-2"></i>
+                            <span>Optimization & Integration</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-check-circle text-green-500 mr-2"></i>
+                            <span>Deployment & Presentation</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Detailed Curriculum -->
+    <section id="curriculum" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">Detailed Curriculum</h2>
+                <p class="text-xl text-gray-600">Week-by-week learning plan with resources</p>
+            </div>
+
+            <!-- Month 1: Theoretical Foundations -->
+            <div class="mb-20">
+                <div class="bg-blue-600 text-white p-6 rounded-t-lg">
+                    <h3 class="text-3xl font-bold flex items-center">
+                        <i class="fas fa-book mr-4"></i>
+                        Month 1: Theoretical Foundations
+                    </h3>
+                </div>
+                
+                <!-- Week 1 -->
+                <div class="bg-white border border-gray-200 p-6">
+                    <div class="flex items-center mb-4">
+                        <div class="w-8 h-8 bg-blue-600 text-white rounded-full flex items-center justify-center mr-4">1</div>
+                        <h4 class="text-2xl font-semibold">Week 1: Introduction to Data Science & AI</h4>
+                    </div>
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div>
+                            <h5 class="text-lg font-semibold mb-3 text-blue-600">Learning Objectives:</h5>
+                            <ul class="list-disc list-inside text-gray-700 space-y-1">
+                                <li>Understanding the data science ecosystem</li>
+                                <li>Grasping AI, ML, and Deep Learning concepts</li>
+                                <li>Learning the data science lifecycle</li>
+                                <li>Role of AI Data Science Engineer at The Link AI</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h5 class="text-lg font-semibold mb-3 text-green-600">Weekly Project:</h5>
+                            <p class="text-gray-700">Write a comprehensive 2-page report analyzing key data science concepts and their applications, how they align with The Link AI's R&D vision, and identify 3 potential AI tools/technologies for evaluation.</p>
+                        </div>
+                    </div>
+                    <div class="mt-6">
+                        <h5 class="text-lg font-semibold mb-4 text-purple-600">Recommended Learning Videos:</h5>
+                        <div class="grid md:grid-cols-2 gap-4">
+                            <div class="video-card bg-gray-50 p-4 rounded-lg">
+                                <h6 class="font-semibold mb-2">Data Science in 5 Minutes</h6>
+                                <p class="text-sm text-gray-600 mb-2">4.4M+ views - Quick introduction to data science fundamentals</p>
+                                <a href="https://www.youtube.com/watch?v=X3paOmcrTjQ" target="_blank" class="text-blue-600 hover:underline">
+                                    <i class="fab fa-youtube mr-1"></i>Watch Video
+                                </a>
+                            </div>
+                            <div class="video-card bg-gray-50 p-4 rounded-lg">
+                                <h6 class="font-semibold mb-2">What is Data Science?</h6>
+                                <p class="text-sm text-gray-600 mb-2">649K+ views - Comprehensive explanation with business examples</p>
+                                <a href="https://www.youtube.com/watch?v=JL_grPUnXzY" target="_blank" class="text-blue-600 hover:underline">
+                                    <i class="fab fa-youtube mr-1"></i>Watch Video
+                                </a>
+                            </div>
+                            <div class="video-card bg-gray-50 p-4 rounded-lg">
+                                <h6 class="font-semibold mb-2">Learn Data Science Tutorial - Full Course</h6>
+                                <p class="text-sm text-gray-600 mb-2">4.1M+ views - 5+ hour comprehensive beginner course</p>
+                                <a href="https://www.youtube.com/watch?v=ua-CiDNNj30" target="_blank" class="text-blue-600 hover:underline">
+                                    <i class="fab fa-youtube mr-1"></i>Watch Video
+                                </a>
+                            </div>
+                            <div class="video-card bg-gray-50 p-4 rounded-lg">
+                                <h6 class="font-semibold mb-2">The Complete Data Science Roadmap</h6>
+                                <p class="text-sm text-gray-600 mb-2">513K+ views - Strategic overview of learning path</p>
+                                <a href="https://www.youtube.com/watch?v=9R3X0JoCLyU" target="_blank" class="text-blue-600 hover:underline">
+                                    <i class="fab fa-youtube mr-1"></i>Watch Video
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Week 2 -->
+                <div class="bg-white border border-gray-200 p-6">
+                    <div class="flex items-center mb-4">
+                        <div class="w-8 h-8 bg-blue-600 text-white rounded-full flex items-center justify-center mr-4">2</div>
+                        <h4 class="text-2xl font-semibold">Week 2: Python for Data Science</h4>
+                    </div>
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div>
+                            <h5 class="text-lg font-semibold mb-3 text-blue-600">Learning Objectives:</h5>
+                            <ul class="list-disc list-inside text-gray-700 space-y-1">
+                                <li>Master Python fundamentals for data science</li>
+                                <li>Learn NumPy for numerical operations</li>
+                                <li>Master Pandas for data manipulation and analysis</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h5 class="text-lg font-semibold mb-3 text-green-600">Weekly Project:</h5>
+                            <p class="text-gray-700">Using a Kaggle dataset: Perform comprehensive data cleaning with Pandas, handle missing values using multiple strategies, calculate and visualize descriptive statistics, document the entire process with insights.</p>
+                        </div>
+                    </div>
+                    <div class="mt-6">
+                        <h5 class="text-lg font-semibold mb-4 text-purple-600">Recommended Learning Videos:</h5>
+                        <div class="grid md:grid-cols-2 gap-4">
+                            <div class="video-card bg-gray-50 p-4 rounded-lg">
+                                <h6 class="font-semibold mb-2">Python for Data Science - Complete Course</h6>
+                                <p class="text-sm text-gray-600 mb-2">4.5M+ views - 12+ hour comprehensive Python data science course</p>
+                                <a href="https://www.youtube.com/watch?v=LHBE6Q9XlzI" target="_blank" class="text-blue-600 hover:underline">
+                                    <i class="fab fa-youtube mr-1"></i>Watch Video
+                                </a>
+                            </div>
+                            <div class="video-card bg-gray-50 p-4 rounded-lg">
+                                <h6 class="font-semibold mb-2">Data Analysis with Python - Full Course</h6>
+                                <p class="text-sm text-gray-600 mb-2">3.9M+ views - 4+ hour course covering NumPy, Pandas, Matplotlib, Seaborn</p>
+                                <a href="https://www.youtube.com/watch?v=r-uOLxNrNk8" target="_blank" class="text-blue-600 hover:underline">
+                                    <i class="fab fa-youtube mr-1"></i>Watch Video
+                                </a>
+                            </div>
+                            <div class="video-card bg-gray-50 p-4 rounded-lg">
+                                <h6 class="font-semibold mb-2">Learn Python for Data Science – Full Course</h6>
+                                <p class="text-sm text-gray-600 mb-2">316K+ views - 17+ hour recent comprehensive course</p>
+                                <a href="https://www.youtube.com/watch?v=CMEWVn1uZpQ" target="_blank" class="text-blue-600 hover:underline">
+                                    <i class="fab fa-youtube mr-1"></i>Watch Video
+                                </a>
+                            </div>
+                            <div class="video-card bg-gray-50 p-4 rounded-lg">
+                                <h6 class="font-semibold mb-2">Pandas for Data Science in 20 Minutes</h6>
+                                <p class="text-sm text-gray-600 mb-2">178K+ views - Quick pandas crash course</p>
+                                <a href="https://www.youtube.com/watch?v=tRKeLrwfUgU" target="_blank" class="text-blue-600 hover:underline">
+                                    <i class="fab fa-youtube mr-1"></i>Watch Video
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Week 3 -->
+                <div class="bg-white border border-gray-200 p-6">
+                    <div class="flex items-center mb-4">
+                        <div class="w-8 h-8 bg-blue-600 text-white rounded-full flex items-center justify-center mr-4">3</div>
+                        <h4 class="text-2xl font-semibold">Week 3: Data Engineering & ETL</h4>
+                    </div>
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div>
+                            <h5 class="text-lg font-semibold mb-3 text-blue-600">Learning Objectives:</h5>
+                            <ul class="list-disc list-inside text-gray-700 space-y-1">
+                                <li>Understand data engineering fundamentals</li>
+                                <li>Learn ETL (Extract, Transform, Load) processes</li>
+                                <li>Grasp data warehousing concepts</li>
+                                <li>Master data modeling fundamentals</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h5 class="text-lg font-semibold mb-3 text-green-600">Weekly Project:</h5>
+                            <p class="text-gray-700">Design and implement a complete ETL pipeline: Extract data from multiple CSV files, transform data (cleaning, feature engineering, aggregation), load processed data into a structured format, create documentation and performance metrics.</p>
+                        </div>
+                    </div>
+                    <div class="mt-6">
+                        <h5 class="text-lg font-semibold mb-4 text-purple-600">Recommended Learning Videos:</h5>
+                        <div class="grid md:grid-cols-2 gap-4">
+                            <div class="video-card bg-gray-50 p-4 rounded-lg">
+                                <h6 class="font-semibold mb-2">Python for Data Analytics - Full Course</h6>
+                                <p class="text-sm text-gray-600 mb-2">882K+ views - 11+ hour practical data analytics course</p>
+                                <a href="https://www.youtube.com/watch?v=wUSDVGivd-8" target="_blank" class="text-blue-600 hover:underline">
+                                    <i class="fab fa-youtube mr-1"></i>Watch Video
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Week 4 -->
+                <div class="bg-white border border-gray-200 p-6 rounded-b-lg">
+                    <div class="flex items-center mb-4">
+                        <div class="w-8 h-8 bg-blue-600 text-white rounded-full flex items-center justify-center mr-4">4</div>
+                        <h4 class="text-2xl font-semibold">Week 4: Introduction to Machine Learning</h4>
+                    </div>
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div>
+                            <h5 class="text-lg font-semibold mb-3 text-blue-600">Learning Objectives:</h5>
+                            <ul class="list-disc list-inside text-gray-700 space-y-1">
+                                <li>Understand supervised vs unsupervised learning</li>
+                                <li>Learn regression, classification, and clustering algorithms</li>
+                                <li>Master Scikit-learn fundamentals</li>
+                                <li>Evaluate model performance</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h5 class="text-lg font-semibold mb-3 text-green-600">Weekly Project:</h5>
+                            <p class="text-gray-700">Build and evaluate machine learning models: Implement linear regression using Scikit-learn, train on provided dataset with proper train/test split, evaluate model performance using multiple metrics, compare different algorithms and document findings.</p>
+                        </div>
+                    </div>
+                    <div class="mt-6">
+                        <h5 class="text-lg font-semibold mb-4 text-purple-600">Recommended Learning Videos:</h5>
+                        <div class="grid md:grid-cols-2 gap-4">
+                            <div class="video-card bg-gray-50 p-4 rounded-lg">
+                                <h6 class="font-semibold mb-2">Machine Learning for Everybody – Full Course</h6>
+                                <p class="text-sm text-gray-600 mb-2">9.1M+ views - 4+ hour accessible machine learning course</p>
+                                <a href="https://www.youtube.com/watch?v=i_LwzRVP7bg" target="_blank" class="text-blue-600 hover:underline">
+                                    <i class="fab fa-youtube mr-1"></i>Watch Video
+                                </a>
+                            </div>
+                            <div class="video-card bg-gray-50 p-4 rounded-lg">
+                                <h6 class="font-semibold mb-2">Complete Machine Learning in 6 Hours</h6>
+                                <p class="text-sm text-gray-600 mb-2">1.5M+ views - Comprehensive ML concepts by Krish Naik</p>
+                                <a href="https://www.youtube.com/watch?v=JxgmHe2NyeY" target="_blank" class="text-blue-600 hover:underline">
+                                    <i class="fab fa-youtube mr-1"></i>Watch Video
+                                </a>
+                            </div>
+                            <div class="video-card bg-gray-50 p-4 rounded-lg">
+                                <h6 class="font-semibold mb-2">Stanford CS229: Machine Learning - Lecture 1</h6>
+                                <p class="text-sm text-gray-600 mb-2">3.8M+ views - Academic-level machine learning fundamentals</p>
+                                <a href="https://www.youtube.com/watch?v=jGwO_UgTS7I" target="_blank" class="text-blue-600 hover:underline">
+                                    <i class="fab fa-youtube mr-1"></i>Watch Video
+                                </a>
+                            </div>
+                            <div class="video-card bg-gray-50 p-4 rounded-lg">
+                                <h6 class="font-semibold mb-2">Python Machine Learning Tutorial</h6>
+                                <p class="text-sm text-gray-600 mb-2">3.4M+ views - Practical ML implementation tutorial</p>
+                                <a href="https://www.youtube.com/watch?v=7eh4d6sabA0" target="_blank" class="text-blue-600 hover:underline">
+                                    <i class="fab fa-youtube mr-1"></i>Watch Video
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Month 2: Tools & Technologies -->
+            <div class="mb-20">
+                <div class="bg-green-600 text-white p-6 rounded-t-lg">
+                    <h3 class="text-3xl font-bold flex items-center">
+                        <i class="fas fa-tools mr-4"></i>
+                        Month 2: Tools & Technologies
+                    </h3>
+                </div>
+                
+                <!-- Week 5 -->
+                <div class="bg-white border border-gray-200 p-6">
+                    <div class="flex items-center mb-4">
+                        <div class="w-8 h-8 bg-green-600 text-white rounded-full flex items-center justify-center mr-4">5</div>
+                        <h4 class="text-2xl font-semibold">Week 5: Advanced Data Analysis & Visualization</h4>
+                    </div>
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div>
+                            <h5 class="text-lg font-semibold mb-3 text-blue-600">Learning Objectives:</h5>
+                            <ul class="list-disc list-inside text-gray-700 space-y-1">
+                                <li>Master Exploratory Data Analysis (EDA) techniques</li>
+                                <li>Create compelling visualizations with Matplotlib and Seaborn</li>
+                                <li>Learn data storytelling principles</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h5 class="text-lg font-semibold mb-3 text-green-600">Weekly Project:</h5>
+                            <p class="text-gray-700">Complete EDA on a complex dataset: Perform comprehensive exploratory data analysis, create 10+ different visualization types, uncover and present 5+ key insights, prepare executive summary presentation.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Week 6 -->
+                <div class="bg-white border border-gray-200 p-6">
+                    <div class="flex items-center mb-4">
+                        <div class="w-8 h-8 bg-green-600 text-white rounded-full flex items-center justify-center mr-4">6</div>
+                        <h4 class="text-2xl font-semibold">Week 6: SQL & Data Warehousing</h4>
+                    </div>
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div>
+                            <h5 class="text-lg font-semibold mb-3 text-blue-600">Learning Objectives:</h5>
+                            <ul class="list-disc list-inside text-gray-700 space-y-1">
+                                <li>Master SQL for data querying and manipulation</li>
+                                <li>Understand database design principles</li>
+                                <li>Work with cloud data warehouses (BigQuery, Redshift)</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h5 class="text-lg font-semibold mb-3 text-green-600">Weekly Project:</h5>
+                            <p class="text-gray-700">Complete SQL mastery project: Write 20+ complex SQL queries for data analysis, design database schema for business case study, perform advanced analytics using window functions, create automated reporting queries.</p>
+                        </div>
+                    </div>
+                    <div class="mt-6">
+                        <h5 class="text-lg font-semibold mb-4 text-purple-600">Recommended Learning Videos:</h5>
+                        <div class="grid md:grid-cols-2 gap-4">
+                            <div class="video-card bg-gray-50 p-4 rounded-lg">
+                                <h6 class="font-semibold mb-2">SQL Course for Beginners - Full Course</h6>
+                                <p class="text-sm text-gray-600 mb-2">13.4M+ views - 3+ hour comprehensive SQL tutorial</p>
+                                <a href="https://www.youtube.com/watch?v=7S_tz1z_5bA" target="_blank" class="text-blue-600 hover:underline">
+                                    <i class="fab fa-youtube mr-1"></i>Watch Video
+                                </a>
+                            </div>
+                            <div class="video-card bg-gray-50 p-4 rounded-lg">
+                                <h6 class="font-semibold mb-2">Learn SQL Beginner to Advanced in Under 4 Hours</h6>
+                                <p class="text-sm text-gray-600 mb-2">921K+ views - Modern SQL course by Alex The Analyst</p>
+                                <a href="https://www.youtube.com/watch?v=OT1RErkfLNQ" target="_blank" class="text-blue-600 hover:underline">
+                                    <i class="fab fa-youtube mr-1"></i>Watch Video
+                                </a>
+                            </div>
+                            <div class="video-card bg-gray-50 p-4 rounded-lg">
+                                <h6 class="font-semibold mb-2">SQL for Data Analytics - Learn SQL in 4 Hours</h6>
+                                <p class="text-sm text-gray-600 mb-2">958K+ views - Data analytics focused SQL course</p>
+                                <a href="https://www.youtube.com/watch?v=7mz73uXD9DA" target="_blank" class="text-blue-600 hover:underline">
+                                    <i class="fab fa-youtube mr-1"></i>Watch Video
+                                </a>
+                            </div>
+                            <div class="video-card bg-gray-50 p-4 rounded-lg">
+                                <h6 class="font-semibold mb-2">SQL for Data Science Tutorial</h6>
+                                <p class="text-sm text-gray-600 mb-2">139K+ views - Data science specific SQL applications</p>
+                                <a href="https://www.youtube.com/watch?v=sTiWTx0ifaM" target="_blank" class="text-blue-600 hover:underline">
+                                    <i class="fab fa-youtube mr-1"></i>Watch Video
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Week 7 -->
+                <div class="bg-white border border-gray-200 p-6">
+                    <div class="flex items-center mb-4">
+                        <div class="w-8 h-8 bg-green-600 text-white rounded-full flex items-center justify-center mr-4">7</div>
+                        <h4 class="text-2xl font-semibold">Week 7: Deep Learning & AI Tools</h4>
+                    </div>
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div>
+                            <h5 class="text-lg font-semibold mb-3 text-blue-600">Learning Objectives:</h5>
+                            <ul class="list-disc list-inside text-gray-700 space-y-1">
+                                <li>Understand neural networks and deep learning fundamentals</li>
+                                <li>Learn TensorFlow and PyTorch frameworks</li>
+                                <li>Explore pre-trained models and transfer learning</li>
+                                <li>Evaluate AI APIs and tools</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h5 class="text-lg font-semibold mb-3 text-green-600">Weekly Project:</h5>
+                            <p class="text-gray-700">Deep learning implementation project: Implement image classification using pre-trained models, fine-tune model on custom dataset, compare TensorFlow and PyTorch implementations, evaluate 3+ AI APIs for business applications, create recommendation report for The Link AI.</p>
+                        </div>
+                    </div>
+                    <div class="mt-6">
+                        <h5 class="text-lg font-semibold mb-4 text-purple-600">Recommended Learning Videos:</h5>
+                        <div class="grid md:grid-cols-2 gap-4">
+                            <div class="video-card bg-gray-50 p-4 rounded-lg">
+                                <h6 class="font-semibold mb-2">PyTorch for Deep Learning & Machine Learning – Full Course</h6>
+                                <p class="text-sm text-gray-600 mb-2">2.8M+ views - 25+ hour comprehensive PyTorch course</p>
+                                <a href="https://www.youtube.com/watch?v=V_xro1bcAuA" target="_blank" class="text-blue-600 hover:underline">
+                                    <i class="fab fa-youtube mr-1"></i>Watch Video
+                                </a>
+                            </div>
+                            <div class="video-card bg-gray-50 p-4 rounded-lg">
+                                <h6 class="font-semibold mb-2">Learn PyTorch for deep learning in a day</h6>
+                                <p class="text-sm text-gray-600 mb-2">1.9M+ views - 25+ hour intensive PyTorch course</p>
+                                <a href="https://www.youtube.com/watch?v=Z_ikDlimN6A" target="_blank" class="text-blue-600 hover:underline">
+                                    <i class="fab fa-youtube mr-1"></i>Watch Video
+                                </a>
+                            </div>
+                            <div class="video-card bg-gray-50 p-4 rounded-lg">
+                                <h6 class="font-semibold mb-2">But what is a neural network?</h6>
+                                <p class="text-sm text-gray-600 mb-2">20.5M+ views - 3Blue1Brown's excellent neural network explanation</p>
+                                <a href="https://www.youtube.com/watch?v=aircAruvnKk" target="_blank" class="text-blue-600 hover:underline">
+                                    <i class="fab fa-youtube mr-1"></i>Watch Video
+                                </a>
+                            </div>
+                            <div class="video-card bg-gray-50 p-4 rounded-lg">
+                                <h6 class="font-semibold mb-2">PyTorch vs TensorFlow in 2025</h6>
+                                <p class="text-sm text-gray-600 mb-2">78K+ views - Framework comparison for practical decision making</p>
+                                <a href="https://www.youtube.com/watch?v=iyHkg7TmHmE" target="_blank" class="text-blue-600 hover:underline">
+                                    <i class="fab fa-youtube mr-1"></i>Watch Video
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Week 8 -->
+                <div class="bg-white border border-gray-200 p-6 rounded-b-lg">
+                    <div class="flex items-center mb-4">
+                        <div class="w-8 h-8 bg-green-600 text-white rounded-full flex items-center justify-center mr-4">8</div>
+                        <h4 class="text-2xl font-semibold">Week 8: MLOps & Model Deployment</h4>
+                    </div>
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div>
+                            <h5 class="text-lg font-semibold mb-3 text-blue-600">Learning Objectives:</h5>
+                            <ul class="list-disc list-inside text-gray-700 space-y-1">
+                                <li>Understand MLOps principles and practices</li>
+                                <li>Learn model deployment strategies</li>
+                                <li>Master containerization with Docker</li>
+                                <li>Build APIs with Flask/FastAPI</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h5 class="text-lg font-semibold mb-3 text-green-600">Weekly Project:</h5>
+                            <p class="text-gray-700">Complete MLOps pipeline: Package trained model in Docker container, create REST API using Flask, implement model versioning and monitoring, deploy to cloud platform with CI/CD, document deployment architecture.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Month 3: Capstone Project -->
+            <div class="mb-20">
+                <div class="bg-purple-600 text-white p-6 rounded-t-lg">
+                    <h3 class="text-3xl font-bold flex items-center">
+                        <i class="fas fa-project-diagram mr-4"></i>
+                        Month 3: Capstone Project
+                    </h3>
+                </div>
+                
+                <div class="bg-white border border-gray-200 p-6 rounded-b-lg">
+                    <h4 class="text-2xl font-semibold mb-6">Weeks 9-12: Real-World Business Project</h4>
+                    
+                    <div class="grid md:grid-cols-4 gap-6 mb-8">
+                        <div class="text-center">
+                            <div class="w-16 h-16 bg-purple-600 text-white rounded-full flex items-center justify-center mx-auto mb-4">
+                                <span class="text-xl font-bold">9</span>
+                            </div>
+                            <h5 class="font-semibold mb-2">Project Planning</h5>
+                            <ul class="text-sm text-gray-600 space-y-1">
+                                <li>Problem definition</li>
+                                <li>Requirement gathering</li>
+                                <li>Data collection</li>
+                                <li>Architecture design</li>
+                            </ul>
+                        </div>
+                        <div class="text-center">
+                            <div class="w-16 h-16 bg-purple-600 text-white rounded-full flex items-center justify-center mx-auto mb-4">
+                                <span class="text-xl font-bold">10</span>
+                            </div>
+                            <h5 class="font-semibold mb-2">Development</h5>
+                            <ul class="text-sm text-gray-600 space-y-1">
+                                <li>Data preprocessing</li>
+                                <li>Feature engineering</li>
+                                <li>Model development</li>
+                                <li>Performance evaluation</li>
+                            </ul>
+                        </div>
+                        <div class="text-center">
+                            <div class="w-16 h-16 bg-purple-600 text-white rounded-full flex items-center justify-center mx-auto mb-4">
+                                <span class="text-xl font-bold">11</span>
+                            </div>
+                            <h5 class="font-semibold mb-2">Optimization</h5>
+                            <ul class="text-sm text-gray-600 space-y-1">
+                                <li>Hyperparameter tuning</li>
+                                <li>Model validation</li>
+                                <li>API development</li>
+                                <li>Performance monitoring</li>
+                            </ul>
+                        </div>
+                        <div class="text-center">
+                            <div class="w-16 h-16 bg-purple-600 text-white rounded-full flex items-center justify-center mx-auto mb-4">
+                                <span class="text-xl font-bold">12</span>
+                            </div>
+                            <h5 class="font-semibold mb-2">Deployment</h5>
+                            <ul class="text-sm text-gray-600 space-y-1">
+                                <li>Production deployment</li>
+                                <li>Documentation</li>
+                                <li>Presentation prep</li>
+                                <li>Stakeholder demo</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="bg-gray-50 p-6 rounded-lg">
+                        <h5 class="text-xl font-semibold mb-4 text-purple-600">Potential Capstone Projects:</h5>
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div class="bg-white p-4 rounded-lg">
+                                <h6 class="font-semibold mb-2 flex items-center">
+                                    <i class="fas fa-users text-blue-600 mr-2"></i>
+                                    Customer Churn Prediction System
+                                </h6>
+                                <p class="text-sm text-gray-600">Build ML model to predict customer churn, deploy as real-time API service, create business dashboard</p>
+                            </div>
+                            <div class="bg-white p-4 rounded-lg">
+                                <h6 class="font-semibold mb-2 flex items-center">
+                                    <i class="fas fa-chart-line text-green-600 mr-2"></i>
+                                    Intelligent Sales Forecasting Platform
+                                </h6>
+                                <p class="text-sm text-gray-600">Develop time-series forecasting models, integrate external data sources, automated reporting system</p>
+                            </div>
+                            <div class="bg-white p-4 rounded-lg">
+                                <h6 class="font-semibold mb-2 flex items-center">
+                                    <i class="fas fa-comments text-yellow-600 mr-2"></i>
+                                    AI-Powered Sentiment Analysis Engine
+                                </h6>
+                                <p class="text-sm text-gray-600">Process customer feedback using NLP, real-time sentiment monitoring, automated alert system</p>
+                            </div>
+                            <div class="bg-white p-4 rounded-lg">
+                                <h6 class="font-semibold mb-2 flex items-center">
+                                    <i class="fas fa-tags text-red-600 mr-2"></i>
+                                    Smart Content Classification System
+                                </h6>
+                                <p class="text-sm text-gray-600">Automated content tagging using ML, multi-modal content analysis, scalable processing pipeline</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Evaluation Framework -->
+    <section id="evaluation" class="py-20 bg-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">Evaluation Framework</h2>
+                <p class="text-xl text-gray-600">Comprehensive assessment criteria and success metrics</p>
+            </div>
+
+            <!-- Assessment Criteria Chart -->
+            <div class="grid md:grid-cols-2 gap-12 mb-16">
+                <div class="bg-white p-8 rounded-lg shadow-lg">
+                    <h3 class="text-2xl font-bold mb-6 text-center">Assessment Criteria Distribution</h3>
+                    <div class="relative" style="height: 400px;">
+                        <canvas id="evaluationChart"></canvas>
+                    </div>
+                </div>
+                <div class="bg-white p-8 rounded-lg shadow-lg">
+                    <h3 class="text-2xl font-bold mb-6">Detailed Breakdown</h3>
+                    <div class="space-y-6">
+                        <div>
+                            <div class="flex items-center justify-between mb-2">
+                                <h4 class="text-lg font-semibold text-blue-600">Technical Skills</h4>
+                                <span class="text-lg font-bold">40%</span>
+                            </div>
+                            <div class="bg-blue-200 rounded-full h-3">
+                                <div class="bg-blue-600 h-3 rounded-full" style="width: 40%"></div>
+                            </div>
+                            <p class="text-sm text-gray-600 mt-2">Programming, Data Science Concepts, Tools & Technologies, Data Engineering</p>
+                        </div>
+                        <div>
+                            <div class="flex items-center justify-between mb-2">
+                                <h4 class="text-lg font-semibold text-green-600">Project Execution</h4>
+                                <span class="text-lg font-bold">40%</span>
+                            </div>
+                            <div class="bg-green-200 rounded-full h-3">
+                                <div class="bg-green-600 h-3 rounded-full" style="width: 40%"></div>
+                            </div>
+                            <p class="text-sm text-gray-600 mt-2">Problem Solving, Project Management, Innovation & Creativity, Final Project Impact</p>
+                        </div>
+                        <div>
+                            <div class="flex items-center justify-between mb-2">
+                                <h4 class="text-lg font-semibold text-purple-600">Professional Skills</h4>
+                                <span class="text-lg font-bold">20%</span>
+                            </div>
+                            <div class="bg-purple-200 rounded-full h-3">
+                                <div class="bg-purple-600 h-3 rounded-full" style="width: 20%"></div>
+                            </div>
+                            <p class="text-sm text-gray-600 mt-2">Communication, Collaboration, Initiative & Learning, Documentation</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Success Metrics -->
+            <div class="bg-white p-8 rounded-lg shadow-lg mb-16">
+                <h3 class="text-2xl font-bold mb-8 text-center">Success Metrics & KPIs</h3>
+                <div class="grid md:grid-cols-4 gap-6">
+                    <div class="text-center">
+                        <div class="w-24 h-24 mx-auto mb-4 relative">
+                            <svg class="progress-ring w-24 h-24">
+                                <circle cx="48" cy="48" r="45" stroke="#e5e7eb" stroke-width="6" fill="transparent"></circle>
+                                <circle cx="48" cy="48" r="45" stroke="#3b82f6" stroke-width="6" fill="transparent" 
+                                        stroke-dasharray="283" stroke-dashoffset="42" class="progress-ring-circle"></circle>
+                            </svg>
+                            <div class="absolute inset-0 flex items-center justify-center">
+                                <span class="text-xl font-bold text-blue-600">85%</span>
+                            </div>
+                        </div>
+                        <h4 class="font-semibold mb-2">Technical Competency</h4>
+                        <p class="text-sm text-gray-600">Target score on technical assessments</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="w-24 h-24 mx-auto mb-4 relative">
+                            <svg class="progress-ring w-24 h-24">
+                                <circle cx="48" cy="48" r="45" stroke="#e5e7eb" stroke-width="6" fill="transparent"></circle>
+                                <circle cx="48" cy="48" r="45" stroke="#10b981" stroke-width="6" fill="transparent" 
+                                        stroke-dasharray="283" stroke-dashoffset="0" class="progress-ring-circle"></circle>
+                            </svg>
+                            <div class="absolute inset-0 flex items-center justify-center">
+                                <span class="text-xl font-bold text-green-600">100%</span>
+                            </div>
+                        </div>
+                        <h4 class="font-semibold mb-2">Project Quality</h4>
+                        <p class="text-sm text-gray-600">All weekly projects to professional standards</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="w-24 h-24 mx-auto mb-4 relative">
+                            <svg class="progress-ring w-24 h-24">
+                                <circle cx="48" cy="48" r="45" stroke="#e5e7eb" stroke-width="6" fill="transparent"></circle>
+                                <circle cx="48" cy="48" r="45" stroke="#f59e0b" stroke-width="6" fill="transparent" 
+                                        stroke-dasharray="283" stroke-dashoffset="198" class="progress-ring-circle"></circle>
+                            </svg>
+                            <div class="absolute inset-0 flex items-center justify-center">
+                                <span class="text-xl font-bold text-yellow-600">3+</span>
+                            </div>
+                        </div>
+                        <h4 class="font-semibold mb-2">Innovation Index</h4>
+                        <p class="text-sm text-gray-600">Novel solutions or approaches demonstrated</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="w-24 h-24 mx-auto mb-4 relative">
+                            <svg class="progress-ring w-24 h-24">
+                                <circle cx="48" cy="48" r="45" stroke="#e5e7eb" stroke-width="6" fill="transparent"></circle>
+                                <circle cx="48" cy="48" r="45" stroke="#8b5cf6" stroke-width="6" fill="transparent" 
+                                        stroke-dasharray="283" stroke-dashoffset="113" class="progress-ring-circle"></circle>
+                            </svg>
+                            <div class="absolute inset-0 flex items-center justify-center">
+                                <span class="text-xl font-bold text-purple-600">5+</span>
+                            </div>
+                        </div>
+                        <h4 class="font-semibold mb-2">Tool Expertise</h4>
+                        <p class="text-sm text-gray-600">Proficiency in AI/ML tools and frameworks</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- R&D Focus Areas -->
+            <div class="bg-white p-8 rounded-lg shadow-lg">
+                <h3 class="text-2xl font-bold mb-8 text-center">R&D Focus Areas</h3>
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div>
+                        <h4 class="text-xl font-semibold mb-4 text-blue-600 flex items-center">
+                            <i class="fas fa-plug mr-3"></i>
+                            API Training & Integration
+                        </h4>
+                        <ul class="list-disc list-inside text-gray-700 space-y-2">
+                            <li>Master OpenAI, Anthropic, Google AI APIs</li>
+                            <li>Evaluate API performance and cost-effectiveness</li>
+                            <li>Build custom API solutions</li>
+                            <li>Optimize API usage for business applications</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="text-xl font-semibold mb-4 text-green-600 flex items-center">
+                            <i class="fas fa-search mr-3"></i>
+                            Tool Discovery & Evaluation
+                        </h4>
+                        <ul class="list-disc list-inside text-gray-700 space-y-2">
+                            <li>Continuous market research for emerging AI tools</li>
+                            <li>Technical assessment and business impact analysis</li>
+                            <li>Proof of concept development</li>
+                            <li>Technology roadmap recommendations</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="text-xl font-semibold mb-4 text-purple-600 flex items-center">
+                            <i class="fas fa-users mr-3"></i>
+                            Client Requirement Analysis
+                        </h4>
+                        <ul class="list-disc list-inside text-gray-700 space-y-2">
+                            <li>Business problem translation to technical requirements</li>
+                            <li>Solution architecture design</li>
+                            <li>Tool recommendation and feasibility analysis</li>
+                            <li>Client consultation and technical advisory</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="text-xl font-semibold mb-4 text-red-600 flex items-center">
+                            <i class="fas fa-lightbulb mr-3"></i>
+                            Innovation & Research
+                        </h4>
+                        <ul class="list-disc list-inside text-gray-700 space-y-2">
+                            <li>Monitor cutting-edge AI developments</li>
+                            <li>Develop proprietary tools and solutions</li>
+                            <li>Process optimization and methodology improvement</li>
+                            <li>Knowledge sharing and team development</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-3 gap-8">
+                <div>
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-brain text-2xl text-blue-400 mr-3"></i>
+                        <span class="text-xl font-bold">The Link AI</span>
+                    </div>
+                    <p class="text-gray-400">Transforming the future through AI innovation and data science excellence.</p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Program Details</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li>Duration: 3 Months</li>
+                        <li>Format: Onsite</li>
+                        <li>Mentor: Hardik Bhatt</li>
+                        <li>Certificate: Upon Completion</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Contact</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><i class="fas fa-globe mr-2"></i>www.thelinkai.com</li>
+                        <li><i class="fas fa-envelope mr-2"></i>info@thelinkai.com</li>
+                        <li><i class="fas fa-phone mr-2"></i>+91 9909533966</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2025 The Link AI. All rights reserved. Ready to embark on your AI Data Science journey? Let's build the future together! 🚀</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Chart.js configuration for evaluation criteria
+        const ctx = document.getElementById('evaluationChart').getContext('2d');
+        new Chart(ctx, {
+            type: 'doughnut',
+            data: {
+                labels: ['Technical Skills', 'Project Execution', 'Professional Skills'],
+                datasets: [{
+                    data: [40, 40, 20],
+                    backgroundColor: ['#3b82f6', '#10b981', '#8b5cf6'],
+                    borderColor: ['#1d4ed8', '#059669', '#7c3aed'],
+                    borderWidth: 2
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: {
+                        position: 'bottom',
+                        labels: {
+                            padding: 20,
+                            font: {
+                                size: 14
+                            }
+                        }
+                    }
+                }
+            }
+        });
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Add intersection observer for animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate-fade-in');
+                }
+            });
+        }, observerOptions);
+
+        // Observe all sections
+        document.querySelectorAll('section').forEach(section => {
+            observer.observe(section);
+        });
+    </script>
+</body>
+</html>
